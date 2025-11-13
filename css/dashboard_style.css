@@ -1,0 +1,127 @@
+/* General layout */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, system-ui, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+/* Layout grid */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #14213d;
+  color: white;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem 0;
+  box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+}
+
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar .logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+  color: #fca311;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.nav-links li {
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.nav-links li:hover,
+.nav-links li.active {
+  background: #1f2e54;
+}
+
+.signout-section {
+  text-align: center;
+  padding: 1rem;
+}
+
+.signout-section button {
+  background: #fca311;
+  border: none;
+  color: #14213d;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.signout-section button:hover {
+  background: #ffbb33;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.content-section {
+  display: none;
+}
+
+.content-section.active {
+  display: block;
+}
+
+h1 {
+  color: #14213d;
+}
+
+input {
+  padding: 0.6rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin: 0.5rem 0;
+  width: 250px;
+}
+
+.btn {
+  background: #14213d;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.3rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.btn:hover {
+  background: #1f2e54;
+}
+
+#user-info img {
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}

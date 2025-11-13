@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - SFU Scanner</title>
+  <link rel="stylesheet" href="css/dashboard_style.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <div class="logo">
+        <img src="assets/logo.png" alt="" />
+        <h2>SFU Scanner</h2>
+      </div>
+      <ul class="nav-links">
+        <li id="nav-account" class="active">Account</li>
+        <li id="nav-plates">Plates</li>
+        <li id="nav-subscription">Subscription</li>
+      </ul>
+      <div class="signout-section">
+        <button id="logoutBtn">Sign Out</button>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <section id="account-section" class="content-section active">
+        <h1>Account Info</h1>
+        <div id="user-info"></div>
+      </section>
+
+      <section id="plates-section" class="content-section">
+        <h1>License Plate</h1>
+        <div id="plate-info"></div>
+        <input type="text" id="plate-input" placeholder="Enter License Plate" />
+        <button class="btn" id="save-plate">Save Plate</button>
+      </section>
+
+      <section id="subscription-section" class="content-section">
+        <h1>Subscription</h1>
+        <p>Subscribe to monitor your parking and notifications.</p>
+        <div id="subscription-form">
+          <input type="text" id="sub-name" placeholder="Full Name" />
+          <input type="text" id="sub-phone" placeholder="Phone Number" />
+          <button class="btn" id="subscribe">Subscribe Monthly</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
