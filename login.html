@@ -3,21 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Login - SmartParking</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Login - SmartScanner</title>
+  <link rel="stylesheet" href="css/login.css" />
   <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
+
 <body>
   <header>
-    <h2><a href="home.html">SmartParking</a></h2>
+    <div class="logo-area">
+      <img src="assets/logo.png" alt="SmartScanner Logo" class="site-logo" />
+      <h2><a href="index.html">SmartScanner</a></h2>
+    </div>
   </header>
 
   <main>
-    <section class="login-container">
-      <h1>Login to Your Account</h1>
-      <div id="loginDiv"></div>
+    <section class="login-box">
+      <h1>Sign In</h1>
+      <p class="subtitle">Access your SmartScanner account</p>
+      <div id="loginDiv" class="google-login"></div>
     </section>
   </main>
+
+<footer class="footer">
+    
+  <footer>
+  <p><a href="terms.html" class="footer-link">Terms & Conditions + Privacy Policy</a></p>
+  </footer>
+
+    <p>© 2025 SmartScanner.ca — Parking made simple.</p>
+  </footer>
+
 
   <script src="js/auth.js"></script>
 </body>

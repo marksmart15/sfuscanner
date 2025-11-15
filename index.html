@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartScanner</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo-area">
+      <img src="assets/logo.png" alt="SmartScanner Logo" class="site-logo" />
+      <h2>SmartScanner</h2>
+    </div>
+    <nav>
+      <a href="login.html" class="btn">Login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to SmartScanner</h1>
+      <p>Monitor your parking account, manage your license plate, and stay notified instantly.</p>
+      <a href="login.html" class="btn">Get Started</a>
+    </section>
+
+    <section class="how-it-works">
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step">
+          <h3>1. Get a Honk Pass</h3>
+          <p>Purchase your parking pass as usual through Honk.</p>
+        </div>
+
+        <div class="step">
+          <h3>2. Sign In</h3>
+          <p>Log in using your license plate to sync your vehicle with SmartScanner.</p>
+        </div>
+
+        <div class="step">
+          <h3>3. Instant Alerts</h3>
+          <p>Receive an email within 1 minute if a ticket is issued, giving you time to react.</p>
+        </div>
+
+        <div class="step">
+          <h3>4. Take Action</h3>
+          <p>Quickly pay your pass or dispute the ticket—SmartScanner makes it smooth and stress-free.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<section class="pricing">
+  <h2>Pricing</h2>
+  <div class="pricing-grid">
+
+    <div class="price-card popular">
+      <h3>Smart Alert</h3>
+      <p class="price">$0/mo</p>
+      <ul>
+        <li>Instant ticket alerts</li>
+        <li>Priority email notifications</li>
+        <li>3 license plates</li>
+        <li>Ticket dispute helper</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section class="faq">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">How does SmartParking work?</button>
+    <div class="faq-answer">
+      <p>Our system uses plate scanning and notifications to help you avoid tickets and manage parking more easily.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Is SmartParking free?</button>
+    <div class="faq-answer">
+      <p>Yes, we offer a free plan with essential features. You can upgrade anytime for extra benefits.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Do you store my location?</button>
+    <div class="faq-answer">
+      <p>No. We only process vehicle plate data required for alerts and dashboard activity.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Can I cancel my subscription?</button>
+    <div class="faq-answer">
+      <p>Yes. You can cancel anytime from your dashboard settings without penalties.</p>
+    </div>
+  </div>
+
+</section>
+
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p class="contact-desc">Have questions? We’re here to help.</p>
+  
+  <div class="contact-info">
+    <p><strong>Email:</strong> smart.scanner.help@gmail.com</p>
+    <p><strong>Response Time:</strong> Within 24 hours</p>
+  </div>
+</section>
+
+  <footer class="footer">
+    
+  <footer>
+  <p><a href="terms.html" class="footer-link">Terms & Conditions + Privacy Policy</a></p>
+  </footer>
+
+    <p>© 2025 SmartScanner.ca — Parking made simple.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <script>
+  document.querySelectorAll('.faq-question').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const ans = btn.nextElementSibling;
+      ans.style.display = ans.style.display === "block" ? "none" : "block";
+    });
+  });
+
+</script>
+
+</body>
+</html>

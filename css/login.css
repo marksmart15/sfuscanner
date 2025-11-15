@@ -1,0 +1,79 @@
+/* General */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, system-ui, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  padding: 1rem 2rem;
+  background: #ffffff;
+  border-bottom: 1px solid #e1e1e1;
+  display: flex;
+  align-items: center;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo {
+  height: 42px;
+  margin-right: 0.5rem;
+}
+
+header h2 a {
+  text-decoration: none;
+  color: #14213d;
+}
+
+/* Layout */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Login Box */
+.login-box {
+  background: white;
+  padding: 2.5rem 2rem;
+  max-width: 380px;
+  width: 100%;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.login-box h1 {
+  color: #14213d;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.google-login {
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-top: 1px solid #e1e1e1;
+  color: #555;
+  font-size: 0.9rem;
+}
